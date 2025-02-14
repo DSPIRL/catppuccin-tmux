@@ -252,8 +252,10 @@ main() {
 
   # status
   set status "on"
-  # set status-bg "${thm_bg}"
-  set status-bg default
+  set status-bg "${thm_bg}"
+  # TODO: I Added this
+  # set status-bg default
+
   set status-justify "left"
   set status-left-length "100"
   set status-right-length "100"
@@ -284,7 +286,8 @@ main() {
 
   setw window-status-format "$window_format"
   setw window-status-current-format "$window_current_format"
-  setw window-status-current-style fg=default,bg=default
+  # TODO: I added this
+  # setw window-status-current-style fg=default,bg=default
 
   local status_left_separator=$(get_tmux_option "@catppuccin_status_left_separator" "")
   local status_right_separator=$(get_tmux_option "@catppuccin_status_right_separator" "█")
